@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC2EF1A0-0A25-494B-8B15-B0C206E18DC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlgorithmGo</RootNamespace>
+    <AssemblyName>AlgorithmGo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\Graph\AdjacencyList.cs" />
+    <Compile Include="classes\List\LinkList.cs" />
+    <Compile Include="classes\Search\BinarySearch.cs" />
+    <Compile Include="classes\Search\HashTable.cs" />
+    <Compile Include="classes\Search\IndexSearch.cs" />
+    <Compile Include="classes\Search\SeqSearch.cs" />
+    <Compile Include="classes\Sort\BubbleSort.cs" />
+    <Compile Include="classes\Graph\DijkstraAlgorithm.cs" />
+    <Compile Include="classes\Sort\HeapSort.cs" />
+    <Compile Include="classes\Sort\QuickSort.cs" />
+    <Compile Include="classes\List\SequenceList.cs" />
+    <Compile Include="classes\Tree\BinaryTree.cs" />
+    <Compile Include="classes\Tree\Node.cs" />
+    <Compile Include="Interface\IAdjacencyMetrix.cs" />
+    <Compile Include="Interface\IBinaryTree.cs" />
+    <Compile Include="Interface\IGraph.cs" />
+    <Compile Include="Interface\ILinkList.cs" />
+    <Compile Include="Interface\INode.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ISequenceList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\AlgorithmTest.cs" />
+    <Compile Include="Windows\FBinarySearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FBinarySearchForm.Designer.cs">
+      <DependentUpon>FBinarySearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FDynamicSearchTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FDynamicSearchTableForm.Designer.cs">
+      <DependentUpon>FDynamicSearchTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FHashTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FHashTableForm.Designer.cs">
+      <DependentUpon>FHashTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FIndexSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FIndexSearchForm.Designer.cs">
+      <DependentUpon>FIndexSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FSequentialSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FSequentialSearchForm.Designer.cs">
+      <DependentUpon>FSequentialSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\GAdjacencyMetrixForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\GAdjacencyMetrixForm.Designer.cs">
+      <DependentUpon>GAdjacencyMetrixForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\GBreadthTraversalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\GBreadthTraversalForm.Designer.cs">
+      <DependentUpon>GBreadthTraversalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\GDepthTraversalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\GDepthTraversalForm.Designer.cs">
+      <DependentUpon>GDepthTraversalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\GFloydForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\GFloydForm.Designer.cs">
+      <DependentUpon>GFloydForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SBubbleSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\SBubbleSortForm.Designer.cs">
+      <DependentUpon>SBubbleSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SHeapSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\SHeapSortForm.Designer.cs">
+      <DependentUpon>SHeapSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SInsertionSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\SInsertionSortForm.Designer.cs">
+      <DependentUpon>SInsertionSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SMergeSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\SMergeSortForm.Designer.cs">
+      <DependentUpon>SMergeSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SQuickSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\SQuickSortForm.Designer.cs">
+      <DependentUpon>SQuickSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\_AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\_AboutForm.Designer.cs">
+      <DependentUpon>_AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TBasicTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\TBasicTreeForm.Designer.cs">
+      <DependentUpon>TBasicTreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TBinaryTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\TBinaryTreeForm.Designer.cs">
+      <DependentUpon>TBinaryTreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\GDijkstraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\GDijkstraForm.Designer.cs">
+      <DependentUpon>GDijkstraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LLinkListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\LLinkListForm.Designer.cs">
+      <DependentUpon>LLinkListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LSequenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\LSequenceForm.Designer.cs">
+      <DependentUpon>LSequenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TTreeTraversalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\TTreeTraversalForm.Designer.cs">
+      <DependentUpon>TTreeTraversalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\_HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\_HelpForm.Designer.cs">
+      <DependentUpon>_HelpForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Windows\FBinarySearchForm.resx">
+      <DependentUpon>FBinarySearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\GAdjacencyMetrixForm.resx">
+      <DependentUpon>GAdjacencyMetrixForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\GBreadthTraversalForm.resx">
+      <DependentUpon>GBreadthTraversalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\GDijkstraForm.resx">
+      <DependentUpon>GDijkstraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\LLinkListForm.resx">
+      <DependentUpon>LLinkListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\LSequenceForm.resx">
+      <DependentUpon>LSequenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\TBasicTreeForm.resx">
+      <DependentUpon>TBasicTreeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\_AboutForm.resx">
+      <DependentUpon>_AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\_HelpForm.resx">
+      <DependentUpon>_HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avast - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
